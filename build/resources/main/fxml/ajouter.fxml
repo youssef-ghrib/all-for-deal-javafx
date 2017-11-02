@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import org.kairos.components.MaterialButton?>
+<?import org.kairos.components.TextInputLayout?>
+<?import org.kairos.components.*?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment" >
+    <children>
+         
+      <SplitPane  layoutX="30.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="575.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane  minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                   <TextInputLayout AnchorPane.topAnchor="20" AnchorPane.leftAnchor="300" >
+                <TextField fx:id="recherche" promptText="Recherche"  />
+            </TextInputLayout>
+ 
+                 
+                  <TableView fx:id="tableau"  prefHeight="300.0" prefWidth="575.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0"  AnchorPane.topAnchor="75" >
+                    <columns>
+                        <TableColumn fx:id="id_panier" prefWidth="200.0"  text="   Nom Produit"  />
+                        <TableColumn fx:id="imagep" prefWidth="200.0"  text="   Image Produit"  />
+                        <TableColumn  fx:id="qte" prefWidth="200.0" text="     Quantité"/> 
+                        <TableColumn fx:id="total" prefWidth="275.0" text="           Prix" />
+                         
+                    </columns>
+                  </TableView>
+                  <ButtonBar layoutX="199.0" layoutY="288.0" prefHeight="40.0" prefWidth="200.0" />
+                  
+                   
+                        
+                <MaterialButton fx:id="supp" layoutX="30.0" layoutY="390.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="199.0" text="   Supprimer un Produit" onAction="#supprimer" />
+                <ImageView fitHeight="21.0" fitWidth="44.0" layoutX="34.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                     <Image url="@../img/pouu.jpg" />
+                    </image>
+                  </ImageView>
+                
+                <MaterialButton fx:id="commander" layoutX="557.0" layoutY="390.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="199.0" text="  Commander"   onAction="#commander"/>
+                 
+                <ImageView fitHeight="21.0" fitWidth="44.0" layoutX="569.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                     <Image url="@../img/p.gif" />
+                     </image>
+                  </ImageView>
+                  <MaterialButton fx:id="Modifier" layoutX="290.0" layoutY="390.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="199.0" text="  Modifier Quantité"  onAction="#modifier" />
+                   <ImageView fitHeight="21.0" fitWidth="44.0" layoutX="295.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                     <Image url="@../img/modif.png" />
+                     </image>
+                  </ImageView>
+               
+               
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+     
+   </children>
+</fx:root>

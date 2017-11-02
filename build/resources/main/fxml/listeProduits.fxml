@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+    <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="775.0" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+        
+            <TableView fx:id="tabid" layoutY="56.0" prefHeight="390.0" prefWidth="779.0">
+                <columns>
+                    <TableColumn fx:id="nomid" prefWidth="90" text="nom" />
+                    <TableColumn fx:id="prixid" prefWidth="90" text="prix" />
+                    <TableColumn fx:id="couleurid" prefWidth="90" text="couleur" />
+                    <TableColumn fx:id="reductionid" prefWidth="90" text="reduction" />
+                    <TableColumn fx:id="categorieid" prefWidth="90" text="categorie" />
+                    <TableColumn fx:id="sous_categorie" prefWidth="90" text="sous categorie" />
+                    <TableColumn fx:id="pointid" prefWidth="90" text="point" />
+                    <TableColumn fx:id="dateid" prefWidth="120.0" text="date lancement" />
+                </columns>
+            </TableView>
+            <HBox>
+                <JFXButton fx:id="btnFermer" layoutX="497.0" layoutY="409.0" mnemonicParsing="false" onAction="#btnFermerAction" text="Fermer" />
+                <JFXButton onAction="#ajout"  layoutX="195.0" layoutY="452.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: silver;" text="Ajouter au panier" />
+            </HBox>
+        </children>
+    </AnchorPane>
+</fx:root>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: silver;" text="nom" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <Label alignment="CENTER" layoutX="26.0" layoutY="346.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: silver;" text="couleur" />
+      <Label alignment="CENTER" layoutX="26.0" layoutY="127.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: silver;" text="prix" />
+      <Label alignment="CENTER" layoutX="26.0" layoutY="240.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: silver;" text="reduction" />
+      <JFXTextField fx:id="nom" layoutX="285.0" layoutY="45.0" maxWidth="367.0" minWidth="149.0" prefHeight="35.0" prefWidth="367.0" style="-fx-background-color: silver;" />
+      <JFXTextField fx:id="prix" layoutX="285.0" layoutY="127.0" maxWidth="367.0" minWidth="149.0" prefHeight="35.0" prefWidth="367.0" style="-fx-background-color: silver;" />
+      <JFXTextField fx:id="reduction" layoutX="287.0" layoutY="240.0" maxWidth="367.0" minWidth="149.0" prefHeight="35.0" prefWidth="367.0" style="-fx-background-color: silver;" />
+      <JFXTextField fx:id="couleur" layoutX="287.0" layoutY="346.0" maxWidth="367.0" minWidth="149.0" prefHeight="35.0" prefWidth="367.0" style="-fx-background-color: silver;" />
+
+      <JFXButton fx:id="btnvalider" layoutX="207.0" layoutY="454.0" onAction="#validerProduit" prefHeight="25.0" prefWidth="121.0" style="-fx-background-color: silver;" text="valider" textAlignment="CENTER" textFill="#751616" />
+   </children>
+</AnchorPane>

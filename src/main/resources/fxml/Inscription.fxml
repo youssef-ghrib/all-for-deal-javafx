@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.PasswordField?>
+<?import org.kairos.components.TextInputLayout?>
+<?import org.kairos.components.MaterialButton?>
+    
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="272.0" layoutX="349.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" width="3.0" />
+            <TextInputLayout layoutX="220.0" layoutY="366.0" prefWidth="180.0">
+      <MaterialButton fx:id="valider" layoutX="254.0" layoutY="376.0" prefWidth="327.0"   mnemonicParsing="false" onAction="#Valider" text="Valider inscription" />
+      </TextInputLayout>
+      <Label layoutX="33.0" layoutY="22.0" prefHeight="17.0" prefWidth="267.0" text="Veuillez entrer vos données correctes:" textFill="#037ac9">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextInputLayout layoutX="141.0" layoutY="74.0">
+      <TextField fx:id="nom" layoutX="141.0" layoutY="84.0" promptText="Nom" />
+      </TextInputLayout>
+      <Label layoutX="33.0" layoutY="97.0" prefHeight="17.0" prefWidth="85.0" text="Nom:" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextInputLayout layoutX="146.0" layoutY="140.0">
+      <TextField fx:id="prenom" layoutX="146.0" layoutY="150.0" promptText="Prenom" />
+      </TextInputLayout> 
+      <Label layoutX="38.0" layoutY="163.0" prefHeight="17.0" prefWidth="85.0" text="Prenom:" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextInputLayout layoutX="141.0" layoutY="201.0">
+         
+      
+      <javafx.scene.control.DatePicker layoutX="141.0" layoutY="211.0" fx:id="date"/>
+
+      </TextInputLayout>
+      <Label layoutX="33.0" layoutY="224.0" prefHeight="17.0" prefWidth="85.0" text="Age:" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextInputLayout layoutX="481.0" layoutY="23.0">
+      <TextField fx:id="adresse" layoutX="481.0" layoutY="83.0" promptText="Adresse"/>
+      </TextInputLayout>
+      <Label layoutX="373.0" layoutY="46.0" prefHeight="17.0" prefWidth="85.0" text="Adresse:" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextInputLayout layoutX="481.0" layoutY="73.0">
+      <TextField fx:id="num" layoutX="481.0" layoutY="83.0" promptText="Numero de telephone"/>
+      </TextInputLayout>
+      <Label layoutX="373.0" layoutY="96.0" prefHeight="17.0" prefWidth="85.0" text="Num telephone:" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+                    <TextInputLayout layoutX="481.0" layoutY="139.0">
+                      <TextField fx:id="mail" layoutX="481.0" layoutY="149.0" promptText="Adresse mail" />
+                    </TextInputLayout>
+      <Label layoutX="373.0" layoutY="162.0" prefHeight="17.0" prefWidth="85.0" text="Mail" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      
+        
+      
+      <TextInputLayout layoutX="481.0" layoutY="199.0">
+      <TextField fx:id="login" layoutX="481.0" layoutY="209.0" promptText="Login" />
+      </TextInputLayout>
+      <Label layoutX="373.0" layoutY="222.0" prefHeight="17.0" prefWidth="85.0" text="Login:" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="282.0" prefHeight="17.0" prefWidth="85.0" text="Sexe:" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="male" layoutX="148.0" layoutY="284.0" mnemonicParsing="false" text="Homme" />
+      <CheckBox fx:id="femelle" layoutX="233.0" layoutY="284.0" mnemonicParsing="false" text="Femme" />
+      <Label layoutX="373.0" layoutY="283.0" prefHeight="17.0" prefWidth="85.0" text="Password:" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextInputLayout layoutX="481.0" layoutY="261.0">
+      <PasswordField fx:id="password" layoutX="481.0" layoutY="271.0" promptText="Password" />
+     
+      </TextInputLayout>
+
+               <TextInputLayout layoutX="40.0" layoutY="316.0" prefWidth="180.0">
+      <MaterialButton fx:id="image" layoutX="254.0" layoutY="376.0" prefWidth="327.0"   mnemonicParsing="false" onAction="#images" text="importer image" />
+      </TextInputLayout>
+      <Label fx:id="info" layoutX="250.0" layoutY="330.0" prefHeight="17.0" prefWidth="385.0" text="Vous devez importer une image pour votre profil!" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+    
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

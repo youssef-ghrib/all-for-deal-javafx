@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.kairos.components.MaterialButton?>
+<?import org.kairos.components.MaterialRadioButton?>
+<?import javafx.scene.layout.*?>    
+<?import javafx.scene.control.*?>
+<?import org.kairos.Toolbar?>
+<?import org.kairos.components.*?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+    <VBox AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0">
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="189.0" layoutY="34.0" prefHeight="44.0" prefWidth="279.0" style="-fx-border-color: blue;" text="Gestion des produits" textFill="#dd4d4d">
+         <font>
+            <Font name="MV Boli" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="37.0" layoutY="156.0" prefHeight="312.0" prefWidth="633.0">
+        <columns>
+            <TableColumn fx:id="nom" prefWidth="202.0" text="Nom du produit" />
+            <TableColumn fx:id="s_cat" prefWidth="221.0" text="Sous Categorie" />         
+            <TableColumn fx:id="points" prefWidth="105.0" text="Points" />
+            <TableColumn fx:id="etat" prefWidth="104.0" text="Etat" />
+        </columns>
+      </TableView>
+      <MaterialButton fx:id="btnactualiser" layoutX="37.0" layoutY="472.0" onAction="#buildData" prefHeight="16.0" prefWidth="119.0" text="actualiser" />
+      <MaterialButton fx:id="btnvalider" layoutX="359.0" layoutY="472.0" onAction="#Valider" prefHeight="25.0" prefWidth="105.0" text="Valider" />
+      <MaterialButton fx:id="btnrefuser" layoutX="486.0" layoutY="472.0" onAction="#Refuser" prefHeight="25.0" prefWidth="105.0" text="Refuser" />
+      <MaterialButton fx:id="btnconsulter" layoutX="606.0" layoutY="472.0" onAction="#ConsulterProduit" prefHeight="25.0" prefWidth="98.0" text="Consulter" />
+      <Pane layoutX="37.0" layoutY="108.0" prefHeight="39.0" prefWidth="428.0" style="-fx-border-color: #77B5FE;">
+         <children>
+            <MaterialRadioButton onAction="#handleRadioButton1" fx:id="valide" layoutX="133.0" layoutY="11.0" text="Validé">
+               <font>
+                  <Font name="Garamond Bold" size="14.0" />
+               </font>
+            </MaterialRadioButton>
+            <MaterialRadioButton onAction="#handleRadioButton2"  fx:id="refuse" layoutX="214.0" layoutY="11.0" text="Réfusé">
+               <font>
+                  <Font name="Garamond Bold" size="14.0" />
+               </font>
+            </MaterialRadioButton>
+            <MaterialRadioButton onAction="#handleRadioButton3"  fx:id="encours" layoutX="295.0" layoutY="11.0" text="En cours">
+               <font>
+                  <Font name="Garamond Bold" size="14.0" />
+               </font>
+            </MaterialRadioButton>
+            <Label layoutX="8.0" layoutY="8.0" prefHeight="25.0" prefWidth="119.0" text="Recherche par état :">
+               <font>
+                  <Font name="Calibri Italic" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
+    </VBox>
+</fx:root>

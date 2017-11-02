@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: silver;" text="nom" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <Label alignment="CENTER" layoutX="26.0" layoutY="213.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: silver;" text="couleur" />
+      <Label alignment="CENTER" layoutX="26.0" layoutY="364.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: silver;" text="image" />
+      <Label alignment="CENTER" layoutX="26.0" layoutY="101.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: silver;" text="prix" />
+      <Label alignment="CENTER" layoutX="26.0" layoutY="159.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: silver;" text="reduction" />
+      <JFXTextField fx:id="nom" layoutX="285.0" layoutY="45.0" maxWidth="367.0" minWidth="149.0" prefHeight="35.0" prefWidth="367.0" style="-fx-background-color: silver;" />
+      <JFXTextField fx:id="prix" layoutX="285.0" layoutY="101.0" maxWidth="367.0" minWidth="149.0" prefHeight="35.0" prefWidth="367.0" style="-fx-background-color: silver;" />
+      <JFXTextField fx:id="reduction" layoutX="285.0" layoutY="159.0" maxWidth="367.0" minWidth="149.0" prefHeight="35.0" prefWidth="367.0" style="-fx-background-color: silver;" />
+      <JFXTextField fx:id="couleur" layoutX="285.0" layoutY="213.0" maxWidth="367.0" minWidth="149.0" prefHeight="35.0" prefWidth="367.0" style="-fx-background-color: silver;" />
+
+      <JFXButton fx:id="btnajouter" layoutX="470.0" layoutY="429.0" onAction="#insertProduit" prefHeight="25.0" prefWidth="121.0" style="-fx-background-color: silver;" text="valider" textAlignment="CENTER" textFill="#751616" />
+      <Label alignment="CENTER" layoutX="24.0" layoutY="266.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: silver;" text="catégorie" />
+      <ComboBox fx:id="categorie" onMouseClicked="#viderSC"  layoutX="283.0" layoutY="266.0" onAction="#cboxcAction" prefHeight="35.0" prefWidth="367.0" style="-fx-background-color: silver;" />
+      <ComboBox fx:id="sous_categorie" layoutX="284.0" layoutY="315.0" onAction="#cboxscAction" prefHeight="35.0" prefWidth="367.0" style="-fx-background-color: silver;" />
+      <Label alignment="CENTER" layoutX="24.0" layoutY="315.0" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: silver;" text="sous catégorie" />
+      <JFXButton fx:id="btnchoisir" layoutX="284.0" layoutY="364.0" onAction="#choisirAction" prefHeight="35.0" prefWidth="367.0" style="-fx-background-color: silver;" text="choisissez une image " textAlignment="CENTER" textFill="#751616" />
+   </children>
+</AnchorPane>
+</fx:root>

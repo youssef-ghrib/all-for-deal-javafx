@@ -1,0 +1,41 @@
+apply plugin: 'java'
+
+sourceCompatibility = '1.8'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+// NetBeans will automatically add "run" and "debug" tasks relying on the
+// "mainClass" property. You may however define the property prior executing
+// tasks by passing a "-PmainClass=<QUALIFIED_CLASS_NAME>" argument.
+//
+// Note however, that you may define your own "run" and "debug" task if you
+// prefer. In this case NetBeans will not add these tasks but you may rely on
+// your own implementation.
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'main.Main'
+}
+
+repositories {
+    mavenCentral()
+    // You may define additional repositories, or even remove "mavenCentral()".
+    // Read more about repositories here:
+    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:repositories
+}
+
+dependencies {
+    // TODO: Add dependencies here ...
+    // You can read more about how to add dependency here:
+    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
+    testCompile group: 'junit', name: 'junit', version: '4.10'
+    
+    compile files ('libs/kairos-all-0.5.jar')
+    compile files ('libs/mysql-connector-java-5.1.38-bin.jar')
+    compile files ('libs/controlsfx-8.40.10.jar')
+    compile files ('libs/com.sun.mail_1.4.2.jar')
+    compile files ('libs/dropbox-core-sdk-1.8.2.jar')
+    compile files ('libs/jackson-core-2.6.1.jar')
+    compile files ('libs/jfoenix.jar')
+    compile files ('libs/TrayNotification.jar')
+    compile files ('libs/TrayTester.jar')
+    compile files ('libs/joda-time-2.9.2.jar')
+
+}

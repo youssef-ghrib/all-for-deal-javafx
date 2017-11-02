@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kairos.components.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox alignment="CENTER" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" style="-fx-padding:16px;-fx-background-color:#f5f5dc" >
+        
+        <Label fx:id="lblnom" text="Nom Service: "   />
+       
+          <Label fx:id="lblnomf" text="nom Fournisseur: "/>
+     
+        <Label fx:id="lblDescription" text="Description: "/>
+        
+        <Label fx:id="lblcateg" text="Categorie: "/>
+        
+         <MaterialButton text="Fermer" onAction="#fermer"/> 
+    </VBox>
+</AnchorPane>

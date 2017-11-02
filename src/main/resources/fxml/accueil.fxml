@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import org.kairos.Toolbar?>
+<?import org.kairos.layouts.*?>
+<?import org.kairos.components.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.paint.ImagePattern?>
+
+<AnchorPane  xmlns:fx="http://javafx.com/fxml/1" fx:id="ap" prefWidth="800" prefHeight="600" style="-fx-background-color:#FAFAFA" >
+    <DrawerLayout fx:id="drawer" DrawerLayout.bottomAnchor="0" DrawerLayout.leftAnchor="0" DrawerLayout.rightAnchor="0" DrawerLayout.topAnchor="0">
+        <content>
+            <VBox alignment="TOP_CENTER" spacing="8">
+                <Toolbar fx:id="toolbar" >
+                    <SlidingTabLayout fx:id="tabLayout" />
+                </Toolbar>
+                <ViewPager id="content" fx:id="viewPager" VBox.vgrow="ALWAYS"/>
+            </VBox>
+        </content>
+        <nav>
+                
+            <StackPane style="-fx-background-image: url('https://lh3.googleusercontent.com/dilCXov30DNCGrf7ZZ2iI4w5dWIEh08WR00T6vigCW6QZMbY8f5QHZnMgI8xcXTuwOk=h900');">
+                
+                <Circle fx:id="circle" centerX="50" centerY="50" radius="50">
+
+                </Circle>
+                             
+                <RecyclerView fx:id="items">
+                </RecyclerView>
+                
+            </StackPane>
+
+        </nav>
+    </DrawerLayout>
+    
+    <JFXButton prefHeight="35.0" prefWidth="35.0"  onAction="#mute"  fx:id="iconB" alignment="BOTTOM_LEFT" AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0" style="-fx-background-color: silver;" > 
+   
+    </JFXButton>
+</AnchorPane>
+

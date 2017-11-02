@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tab" layoutX="3.0" layoutY="4.0" prefHeight="450.0" prefWidth="790.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="90.0" text="nom" />
+          <TableColumn fx:id="couleur" prefWidth="90.0" text="couleur" />
+            <TableColumn fx:id="prix" prefWidth="90.0" text="prix" />
+            <TableColumn fx:id="reduction" prefWidth="90.0" text="reduction" />
+            <TableColumn fx:id="points" prefWidth="90.0" text="points" />
+            <TableColumn fx:id="datelanc" prefWidth="120" text="date lancement" />
+            <TableColumn fx:id="sous_categorie" prefWidth="100.0" text="sous categorie" />
+            <TableColumn fx:id="categorieid" prefWidth="90.0" text="categorie" />
+            <TableColumn fx:id="id" prefWidth="0.0" text="id" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnmodifier" disable="true" layoutX="475.0" layoutY="461.0" onAction="#modifierProduit" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: silver;" text="Modifier" />
+      <JFXButton fx:id="btnsupprimer" disable="true" layoutX="206.0" layoutY="461.0" onAction="#deleteProduit" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: silver;" text="supprimer" />
+   </children>
+</AnchorPane>
+</fx:root>

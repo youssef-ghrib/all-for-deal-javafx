@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<?import org.kairos.components.*?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+    <AnchorPane fx:id="anchor" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" style="-fx-padding:16px">
+        <VBox fx:id="vbox" alignment="TOP_CENTER" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" style="-fx-padding:16px">
+            <Label fx:id="lblNom" style="-fx-font-size:48;-fx-font-weight:bold;" />
+            <Label fx:id="lblFournisseur"/>
+            <Label fx:id="lblPrix" style="-fx-text-fill: red;"/>
+            <Label fx:id="lblPoints"/>
+            <Label fx:id="lblDate"/>
+            <Label fx:id="lblCategorie"/>
+        </VBox>
+        <VBox fx:id="buttons" alignment="TOP_RIGHT" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" style="-fx-padding:16px">
+            <MaterialButton fx:id="btnAdd" text="Ajouter au panier" onAction="#addToCart"/> 
+        </VBox>
+    </AnchorPane>
+</fx:root>

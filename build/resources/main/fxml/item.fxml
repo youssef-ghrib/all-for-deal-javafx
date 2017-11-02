@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+    
+<StackPane prefHeight="48" alignment="CENTER_LEFT" xmlns:fx="http://javafx.com/fxml/1" styleClass="nav-item">
+    
+    <SVGPath fx:id="svg" styleClass="icon">
+        <StackPane.margin>
+            <Insets left="16"></Insets>
+            
+        </StackPane.margin>
+    </SVGPath>
+    <Label fx:id="title">
+        <StackPane.margin>
+            <Insets left="72"></Insets>
+        </StackPane.margin>
+    </Label>
+</StackPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kairos.components.MaterialButton?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import org.kairos.Toolbar?>
+<?import org.kairos.components.*?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+    <VBox AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0">
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="199.0" layoutY="30.0" prefHeight="43.0" prefWidth="289.0" style="-fx-border-color: blue;" text="Evaluation des produit" textFill="#f83737">
+         <font>
+            <Font name="MV Boli" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="33.0" layoutY="101.0" onMouseClicked="#GetSelectedProduit" prefHeight="294.0" prefWidth="657.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="170.0" text="Nom du produit" />
+          <TableColumn fx:id="prix" prefWidth="132.0" text="Prix" />
+            <TableColumn fx:id="categorie" prefWidth="157.0" text="Catégorie" />
+            <TableColumn fx:id="point" prefWidth="200.0" text="Nombre de points" />
+        </columns>
+      </TableView>
+      <MaterialButton fx:id="evaluer" layoutX="284.0" layoutY="405.0" minWidth="76.0" onAction="#evaluer" prefHeight="31.0" prefWidth="76.0" text="Evaluer" />
+      <MaterialButton fx:id="consulter" layoutX="465.0" layoutY="404.0" onAction="#ConsulterReclamation" prefHeight="31.0" prefWidth="246.0" text="CONSULTER Produit" />
+      <JFXTextField fx:id="txtPoints" layoutX="33.0" layoutY="405.0" maxWidth="246.0" minWidth="169.0" prefHeight="31.0" prefWidth="246.0" promptText="Entrer le nombre de points ..." />
+   </children>
+</AnchorPane>
+    </VBox>
+</fx:root>

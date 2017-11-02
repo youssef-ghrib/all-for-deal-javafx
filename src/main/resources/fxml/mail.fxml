@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" onKeyReleased="#recherche" prefHeight="486.0" prefWidth="779.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65">
+   <children>
+      <Label layoutX="28.0" layoutY="33.0" prefHeight="17.0" prefWidth="47.0" text="Sujet" textFill="#0a1fa1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="28.0" layoutY="156.0" prefHeight="184.0" prefWidth="439.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+          <TableColumn fx:id="categorie" prefWidth="75.0" text="Categorie" />
+            <TableColumn fx:id="description" prefWidth="288.0" text="Description" />
+
+        </columns>
+      </TableView>
+      <TextArea fx:id="message" layoutX="484.0" layoutY="119.0" prefHeight="221.0" prefWidth="250.0" />
+      <TextField fx:id="sujet" layoutX="81.0" layoutY="29.0" prefHeight="25.0" prefWidth="295.0" />
+      <Label layoutX="28.0" layoutY="91.0" prefHeight="17.0" prefWidth="214.0" text="A propos de quel service :" textFill="#0a1fa1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="484.0" layoutY="91.0" prefHeight="17.0" prefWidth="187.0" text="Contenu du message:" textFill="#0a1fa1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button onAction="#envoyer" layoutX="254.0" layoutY="380.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Envoyer" />
+      <TextField fx:id="service" layoutX="28.0" layoutY="119.0" onInputMethodTextChanged="#recherche" prefHeight="25.0" prefWidth="295.0" />
+   </children>
+</AnchorPane>

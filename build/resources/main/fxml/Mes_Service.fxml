@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kairos.components.MaterialButton?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import org.kairos.Toolbar?>
+<?import org.kairos.components.*?>
+
+
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+     <children>
+    <VBox alignment="CENTER" spacing="10" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" style="-fx-padding:16px">
+         
+             <HBox alignment="CENTER" spacing="10" >
+      <TextField fx:id="find" layoutX="51.0" layoutY="130.0" prefHeight="25.0" prefWidth="250.0" promptText="Rechercher par Nom" />
+           </HBox>
+           <GridPane alignment="CENTER">
+      <TableView fx:id="table" layoutX="51.0" layoutY="174.0" prefHeight="263.0" prefWidth="653.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="0.0" text="ID" />
+          <TableColumn fx:id="nom" prefWidth="139.0" text="Nom" />
+            <TableColumn fx:id="categorie" prefWidth="145.0" text="Categorie" />
+            <TableColumn fx:id="description" prefWidth="141.0" text="Description" />
+            <TableColumn fx:id="fournisseur" prefWidth="152.0" text="Fournisseur" />
+        </columns>
+      </TableView>
+      </GridPane>
+     <HBox alignment="CENTER" spacing="10">
+      <MaterialButton layoutX="600.0" layoutY="459.0" text="Edit" onAction="#modif" />
+   
+      <MaterialButton layoutX="400.0" layoutY="459.0"  text="Supprimer" onAction="#SupprimerMembre" />
+         <MaterialButton layoutX="200.0" layoutY="459.0" text="Ajouter" onAction="#ajouter" />
+      <MaterialButton layoutX="51.0" layoutY="459.0"  text="Actualiser" onAction="#buildData" />
+        </HBox>  
+   </VBox>
+    </children>
+</fx:root>

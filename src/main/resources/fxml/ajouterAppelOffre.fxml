@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import org.kairos.components.*?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+    <children>
+        <VBox alignment="CENTER" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="50" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="50" style="-fx-padding:16px" >
+            <TextInputLayout>
+                <TextField fx:id="txtSujet" promptText="Sujet" />
+            </TextInputLayout>
+            <TextInputLayout>
+                <TextArea fx:id="txtDescription" promptText="Description" />
+            </TextInputLayout>
+            <HBox alignment="CENTER" spacing="50" >
+                <TextInputLayout>
+                    <DatePicker fx:id="txtDateDebut" editable="false" promptText="Date début" />
+                </TextInputLayout>
+                <TextInputLayout>
+                    <DatePicker fx:id="txtDateFin" editable="false" promptText="Date fin" />
+                </TextInputLayout>
+            </HBox>
+            <TextInputLayout>
+                <TextField fx:id="txtLieu" promptText="Lieu" />
+            </TextInputLayout>
+            <TextInputLayout>
+                <TextArea fx:id="txtRemarque" promptText="Remarque" />
+            </TextInputLayout>
+            <MaterialButton onAction="#ajouter"  mnemonicParsing="false" text="Ajouter" />
+        </VBox>
+    </children>      
+</fx:root>
+
+
+
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kairos.components.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox alignment="CENTER" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" style="-fx-padding:16px;-fx-background-color:#f5f5dc" >
+        <Label fx:id="lblSujet" text="Sujet: " />
+        <Label fx:id="lblDescription" text="Description: "/>
+        <Label fx:id="lblDateDebut" text="Date début: "/>
+        <Label fx:id="lblDateFin" text="Date fin: "/>
+        <Label fx:id="lblLieu" text="Lieu: "/>
+        <Label fx:id="lblRemarques" text="Remarque: "/>
+        <MaterialButton text="Fermer" onAction="#fermer"/> 
+    </VBox>
+</AnchorPane>

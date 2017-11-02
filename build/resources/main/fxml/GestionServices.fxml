@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kairos.components.MaterialButton?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.kairos.components.MaterialButton?>
+<?import org.kairos.components.MaterialRadioButton?>
+<?import javafx.scene.layout.*?>    
+<?import javafx.scene.control.*?>
+<?import org.kairos.Toolbar?>
+<?import org.kairos.components.*?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+    <VBox AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0">
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="648.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65">
+   <children>
+       
+      <TableView fx:id="table" layoutX="36.0" layoutY="134.0" prefHeight="280.0" prefWidth="630.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="250.0" text="Nom" />
+          <TableColumn fx:id="fournisseur" prefWidth="200.0" text="Fournisseur" />
+            <TableColumn fx:id="categorie" prefWidth="200.0" text="Categorie" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="178.0" layoutY="30.0" prefHeight="35.0" prefWidth="218.0" text="Gestion des services" style="-fx-border-color: blue;" textAlignment="CENTER" textFill="#dd4d4d" >
+                   <font>
+            <Font name="MV Boli" size="24.0" />
+         </font>
+      </Label>
+      <MaterialButton layoutX="352.0" layoutY="420.0" prefWidth="110.0" text="Consulter" fx:id="btnconsulter" onAction="#ConsulterService" />
+      <MaterialButton layoutX="480.0" layoutY="420.0" prefWidth="110.0" text="Supprimer" fx:id="btnsupprimer" onAction="#SupprimerService"  />
+   </children>
+</AnchorPane>
+    </VBox>
+</fx:root>
